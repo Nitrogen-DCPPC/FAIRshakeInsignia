@@ -7,7 +7,7 @@
     "prepare": "babel-node bin/get-schema.js > src/schema.js",
     "compile": "babel src/index.js src/schema.js --out-dir dist",
     "deploy": "browserify dist/index.js > dist/browser.min.js",
-    "install": "npm run prepare && npm run compile"
+    "postinstall": "npm run prepare && npm run compile"
   },
   "repository": {
     "type": "git",
