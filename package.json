@@ -29,10 +29,6 @@
   },
   "homepage": "https://github.com/Nitrogen-DCPPC/FAIRshake#readme",
   "dependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/node": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
     "atob": "^2.1.2",
     "coreapi": "^0.1.1",
     "d3": "^5.7.0",
@@ -40,6 +36,10 @@
     "uglify-js": "^3.4.9"
   },
   "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
     "browserify": "^16.2.2"
   },
   "browserify": {
