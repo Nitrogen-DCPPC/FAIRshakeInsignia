@@ -4,14 +4,10 @@
   "description": "A rendering of FAIR assessment scores from FAIRshake",
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "babel-node bin/get-schema.js > dist/schema.js",
+    "prepare": "babel-node bin/get-schema.js | babel -f dist/schema.js > dist/schema.js",
     "build": "babel src/index.js dist/schema.js --out-dir dist",
     "deploy": "browserify dist/index.js > dist/browser.min.js",
     "prepublish": "npm run prepare && npm run build && npm run deploy"
-  },
-  "directories": {
-    "dist": "dist",
-    "src": "src"
   },
   "repository": {
     "type": "git",

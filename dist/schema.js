@@ -2,7 +2,11 @@
 
 var _coreapi = _interopRequireDefault(require("coreapi"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    default: obj
+  };
+}
 
 window.coreapi = _coreapi.default;
 var codec = new window.coreapi.codecs.CoreJSONCodec();
