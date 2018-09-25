@@ -9,6 +9,10 @@
     "deploy": "browserify dist/index.js > dist/browser.min.js",
     "postinstall": "npm run prepare && npm run compile"
   },
+  "directories":{
+    "dist": "dist",
+    "src": "src"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nitrogen-DCPPC/FAIRshake.git"
