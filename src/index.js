@@ -106,7 +106,7 @@ export function build_svg(container, scores, settings) {
     var local_unit = 1 / (scores_sq * summary_sq)
 
     Object.keys(score).forEach(function (summary, j) {
-      var average = score[summary]
+      var average = score[summary] === null ? NaN : score[summary]
       var local_x = (j % summary_sq) * local_unit
       var local_y = Math.floor(j / summary_sq) * local_unit
 
@@ -161,7 +161,7 @@ export function build_svg_from_score(container, params) {
       results.scores,
       {
         tooltips: function(rubric, metric, score) {
-          return 'Score: ' + (score * 100).toFixed(0) + '%<br />' + results.metrics[metric]
+          return (isNaN(score) ? '' : 'Score: ' + (score * 100).toFixed(0) + '%<br />') + results.metrics[metric]
         },
         links: function(rubric, metric, score) {
           return 'https://fairshake.cloud/metric/' + metric + '/'
