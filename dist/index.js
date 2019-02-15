@@ -69,7 +69,9 @@ function build_svg(container, scores, settings) {
   // 4<n<=9 summaries in third score
   //
   // Color is linarly chosen between Red (0) and Blue (1).
-  // Default settings
+  // Default scores
+  if (scores === undefined) scores = {}; // Default settings
+
   if (settings === undefined) settings = {};
   var tooltips = settings.tooltips;
   var links = settings.links;

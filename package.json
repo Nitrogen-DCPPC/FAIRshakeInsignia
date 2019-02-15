@@ -1,7 +1,10 @@
 {
   "name": "fairshakeinsignia",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A rendering of FAIR assessment scores from FAIRshake",
+  "publishConfig": {
+    "public": true
+  },
   "main": "dist/index.js",
   "scripts": {
     "prepare": "babel-node bin/get-schema.js | babel -f dist/schema.js > dist/schema.js",
@@ -33,9 +36,9 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/node": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
     "browserify": "^16.2.3"
   },
   "browserify": {

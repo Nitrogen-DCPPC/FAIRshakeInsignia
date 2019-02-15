@@ -70,6 +70,10 @@ export function build_svg(container, scores, settings) {
   //
   // Color is linarly chosen between Red (0) and Blue (1).
 
+  // Default scores
+  if (scores === undefined)
+    scores = {}
+
   // Default settings
   if (settings === undefined)
     settings = {}
