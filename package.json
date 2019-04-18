@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nitrogen-DCPPC/FAIRshake.git"
+    "url": "git+https://github.com/MaayanLab/FAIRshake.git"
   },
   "keywords": [
     "FAIR",
@@ -24,9 +24,9 @@
   "author": "Daniel J. B. Clarke",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Nitrogen-DCPPC/FAIRshake/issues"
+    "url": "https://github.com/MaayanLab/FAIRshake/issues"
   },
-  "homepage": "https://github.com/Nitrogen-DCPPC/FAIRshake#readme",
+  "homepage": "https://github.com/MaayanLab/FAIRshake#readme",
   "dependencies": {
     "atob": "^2.1.2",
     "coreapi": "^0.1.1",
