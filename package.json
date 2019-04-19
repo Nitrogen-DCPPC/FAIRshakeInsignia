@@ -1,6 +1,6 @@
 {
   "name": "fairshakeinsignia",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A rendering of FAIR assessment scores from FAIRshake",
   "publishConfig": {
     "public": true
